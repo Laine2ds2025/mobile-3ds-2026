@@ -5,12 +5,21 @@ class Aula03 extends Component {
     render(){
         return(
             <View style={ styles.container}>
-                <TextInput 
-                    style={ styles.input}
+                <View style={ styles.conteudo }>
+
+                    <Image 
+                        style={ styles.logo }
+                        source={ require('../images/Logo_Bola_PNG.png')}
                     />
-                <TextInput 
-                    style={ styles.input}
-                    />
+                    <Text style={styles.label}>Nome:</Text>
+                   <TextInput 
+                       style={ styles.input}
+                   />
+                    <Text style={styles.label}>Senha:</Text>
+                    <TextInput 
+                       style={ styles.input}
+                   />
+                </View>
             </View>
         )
     }
@@ -27,11 +36,29 @@ const styles = StyleSheet.create({
         backgroundColor: 'black'
     },
 
+    conteudo: {
+        borderColor: 'red',
+        borderWidth: 1,
+        width: 300,
+        height: 300,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    logo: {
+        width: 100,
+        height: 100,
+    },
+
+    label:{
+        color: 'white'
+    },
+
 
     input: {
         height: 40,
         margin: 20,
-        width: 250,
+        width: 300,
         borderWidth: 1,
         padding: 10,
         backgroundColor: 'white',
