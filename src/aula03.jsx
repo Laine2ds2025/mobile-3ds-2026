@@ -19,6 +19,11 @@ class Aula03 extends Component {
                     <TextInput 
                        style={ styles.input}
                    />
+
+
+                   <TextInput style={ styles.botao }>
+                        <Text style={ styles.textoBotao }>Entrar</Text>
+                   </TextInput>
                 </View>
             </View>
         )
@@ -51,7 +56,8 @@ const styles = StyleSheet.create({
     },
 
     label:{
-        color: 'white'
+        color: 'white',
+        flex: 1,
     },
 
 
