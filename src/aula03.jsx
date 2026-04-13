@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import { View, Text, Image, StyleSheet, TextInput } from "react-native";
+import { View, Text, Image, StyleSheet, TextInput, Button} from "react-native";
 
 class Aula03 extends Component {
     render(){
@@ -20,10 +20,13 @@ class Aula03 extends Component {
                        style={ styles.input}
                    />
 
+                 
+                 <Button style={ styles.botao}
+                    title="Entrar"
+                    color="green"
+                 />
 
-                   <TextInput style={ styles.botao }>
-                        <Text style={ styles.textoBotao }>Entrar</Text>
-                   </TextInput>
+
                 </View>
             </View>
         )
@@ -70,4 +73,11 @@ const styles = StyleSheet.create({
         backgroundColor: 'white',
         borderRadius: 5
     },
+
+    botao: {
+        backgroundColor: 'green',
+        color: 'black',
+        padding: 20,
+        borderRadius: 5,
+    }
 });
